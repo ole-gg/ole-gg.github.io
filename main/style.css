@@ -1,0 +1,56 @@
+
+.background-image {
+    width:auto;
+    height: 100%; 
+    position: absolute;
+    z-index: -1; 
+   
+}
+
+.ka4eli{
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+.head{
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.button-container {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    background-color: var(--colour-for-visual);
+}
+
+.button-item {
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+.button-url:hover  {
+    content: url('images/click\ me.png'); /* Смена изображения при наведении */
+    width: 194px; /* Задаем новую ширину при наведении */
+    height: auto; /* Высота останется пропорциональной */
+    position: relative; /* Позиционирование изображения */
+    right: 0px; /* Отступ от правого края */
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    
+}
+
+

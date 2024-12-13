@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'ShadowsIntoLightTwo-Regular'; 
+    src: url('../global/fonts/Shadows-Into-Light-Two/shadowsintolighttwo-regular-webfont.woff2') 
+    format('woff2')
+}
+
+@font-face {
+    font-family: 'Play'; 
+    src: url('../global/fonts/Play/play-regular-webfont.woff2') format('woff2');
+}
+
+
+.text {
+    font-family: 'ShadowsIntoLightTwo-Regular'; /* Использование подключенного шрифта */
+    font-size: 35px; /* Размер шрифта */
+    color: #FDFDFD; /* Цвет текста */
+    z-index: 22;
+    letter-spacing: 0.06em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Задаем глобальные переменные */
+:root {
+    --height-max: 1567px;
+    --colour-for-visual: rgba(255, 255, 255, 0.0); 
+}
+
+html{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff0000; /* Цвет фона */
+
+    overflow: auto; /* Включает прокрутку */
+    overflow-x: hidden; /*скролл убирает*/
+    overflow-y: hidden;
+    scroll-behavior: smooth;   
+   
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    position: absolute;
+    z-index: -1;
+    width: 1440px;    
+   
+}
+
+
+.invert-button{
+    background-color: var(--colour-for-visual);
+    cursor: pointer; 
+    z-index: 9999; 
+    
+}
+
+.button {
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: opacity 0.3s ease; /* Анимация изменения прозрачности */
+    z-index: 3;
+}
+
+
+
+.button-url {
+    display: inline-block;
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+.button:hover {
+    opacity: 0.4; /* Изменение прозрачности при наведении */
+}
+.button:active{
+    opacity: 0.1; /* Изменение прозрачности при наведении */
+}
+
+.hidden-link{
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    color: inherit; /* Устанавливаем цвет текста таким же, как у родителя */
+    cursor: pointer; /* Указывает, что это ссылка */
+    transition: opacity 0.3s ease; /* Анимация изменения прозрачности */
+}
+
+.hidden-link:hover{
+    opacity: 0.4; /* Изменение прозрачности при наведении */
+}
+
+.hidden-link:active{
+    opacity: 0.1; /* Изменение прозрачности при наведении */
+}
+
+.no-invert {
+    filter: invert(0%) !important; /* Отмена инверсии */
+    /* opacity: 0.4; */
+}

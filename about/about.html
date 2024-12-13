@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>about me</title>    
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="../global/style_global.css">   
+    <link rel="icon" href="../global/images/фавиконка.svg" type="image/svg">
+    
+</head>
+<body>
+    <div class="container" style="height: 100%;">
+        <div> 
+            <img src="images/fon.jpg"; 
+            alt="Фоновое изображение" class="background-image"> 
+          
+        </div>
+       
+
+        <div  class="left-column ">
+            <div class="left-item">
+                <img src="images/about.png" alt="Кнопка 3"
+                width=288px height="auto" style="margin-top: 126px; ">
+            </div>
+            <div class="left-item">                   
+                        <pre  class="text" style="margin-top: 306px;" >fedorov oleg
+                             22 years old
+                             <a href="https://vk.com/id315282386" target="_blank" 
+                             class="hidden-link">not single</a>
+                            yoroshiku!
+                        </pre> 
+            </div>
+            <div class="left-item">                                 
+                        <pre class="text" style="margin-top: 716px;">
+                            I am a cool designer
+                            and a little bit teacher
+                        </pre>
+            </div>
+                     
+        </div>
+
+        <div  class="right-column ">
+            <div class="right-item">
+                <img src="images/me.png" alt="Кнопка 3" class="button" 
+                width=116px height="auto" style="margin-top: 161px"
+                onmouseover="changeImage(document.getElementById('photo'), 'images/фото (2).png')"
+                onmouseout="changeImage(document.getElementById('photo'), 'images/фото (1).png')"
+                onclick="changeImage(document.getElementById('photo'), 'images/фото (3).png')">                
+            </div>
+            <div id="photo" class="right-item;">
+                <img src="images/фото (1).png" class="no-invert" alt="Кнопка 3" 
+                style="margin-top: 312px; ">
+            </div>
+
+                     
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="../global/scrips_global.js" ></script>
+    <script src="../global/script_invers.js" ></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+
+.background-image {
+    width: 1440px;
+    height: 100%; 
+   
+    z-index: -1; 
+   
+
+}
+
+.left-column {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    
+  
+    top: 0;
+    left: 0;
+    width: 710px; /* Задайте необходимую ширину */
+    height: var(--height-max); /* Задайте высоту, чтобы колонка занимала всю высоту */
+    background-color: var(--colour-for-visual);
+   
+    text-align: right;
+}
+.right-column {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    
+  
+    top: 0;
+    right: 0;
+    width: 615px; /* Задайте необходимую ширину */
+    height: var(--height-max); /* Задайте высоту, чтобы колонка занимала всю высоту */
+    background-color: var(--colour-for-visual);
+    
+    text-align: left;
+}
+
+
+.left-item {
+    display: flex;    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.right-item {
+    display: flex;    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+

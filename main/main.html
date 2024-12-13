@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="../global/style_global.css">   
+    <link rel="icon" href="../global/images/фавиконка.svg" type="image/svg">
+    <link rel="stylesheet" href="style_modal.css">
+</head>
+<body>
+    <div class="container" style="height: 1024px;">
+        <div> 
+            <img src="images/фон.jpg" alt="Фоновое изображение" class="background-image"> 
+            <img src="images/качели.gif" alt="качели" class="ka4eli" width=345px height="auto" style="margin-left: 565px;"> 
+            <img src="images/свет.gif" alt="свет" class="ka4eli" style="opacity: 0.3; margin-left: 474px;" width="auto" height=1024px> 
+        </div>
+         
+        <div class="head">
+                <img src="images/logo.png" alt="Кнопка 1"  class="head"
+                width=186.5px height="auto" style="margin-top: 44px; margin-left: 121px;">
+         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="button-url" 
+         style="margin-top: 48px; margin-left: 1137px;">
+                <img src="images/pick me.png" alt="Кнопка 2" 
+                width=194px height="auto">
+        </a>   
+        </div>
+      
+                
+
+        <div class="button-container">
+            <div class="button-item">
+                <img src="images/about.png" alt="about" class="button" 
+                    width="318px" height="auto" style="margin-top: 297px; margin-left: 100px;"
+                    onclick="ToAnotherPage('../about/about.html')">
+            </div>
+            <div class="button-item">
+                <img src="images/contacts.png" alt="Кнопка 5" class="button" 
+                    width=301px height="auto" style="margin-top: 709px; margin-left: 110px;">
+            </div>
+            <div class="button-item">
+                <img src="images/works.png" alt="Кнопка 4" class="button" 
+                    width=304.5px height="auto" style="margin-top: 290px; margin-left: 1031px;">
+            </div>
+            <div class="button-item">
+                <img src="images/feedback.png" alt="Кнопка 6" class="button"
+                    width=334px height="auto" style="margin-top: 704px; 
+                    margin-left: 1028px;" onclick="showModal('nameModal');">
+            </div>
+          
+            <div class="button-item">
+                <div class="invert-button" style="width: 25px; height: 65px;
+                margin-top: 595px; margin-left: 615px;" onclick="invertClick()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="nameModal" class="modal">
+        <div class="rectangle" style="width: 500px; height: 300px;" >
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('nameModal');">Закрыть </span>
+                <span class="close" onclick="showModal('messageModal'); closeModal('nameModal');"> 
+                    Некст
+                </span>
+                <h2>Обратная связь</h2>
+                <p>Здесь будет форма обратной связи.</p>
+            </div>
+        </div>
+    </div>
+    <div id="messageModal" class="modal">
+        <div class="rectangle" style="width: 1000px; height: 500px;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('messageModal');">Закрыть </span>
+                  <h2>Обратная связь</h2>
+                <p>Здесь будет форма обратной связи.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../global/scrips_global.js" ></script>
+    <script src="../global/script_invers.js" ></script>
+</body>
+</html>
