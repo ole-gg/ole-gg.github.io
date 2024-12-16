@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'ShadowsIntoLightTwo-Regular'; 
-    src: url('../global/fonts/Shadows-Into-Light-Two/shadowsintolighttwo-regular-webfont.woff2') 
+    src: url('./fonts/Shadows-Into-Light-Two/shadowsintolighttwo-regular-webfont.woff2') 
     format('woff2')
 }
 
 @font-face {
     font-family: 'Play'; 
-    src: url('../global/fonts/Play/play-regular-webfont.woff2') format('woff2');
+    src: url('./fonts/Play/play-regular-webfont.woff2') format('woff2');
 }
 
 
@@ -84,7 +84,7 @@ body{
     opacity: 0.4; /* Изменение прозрачности при наведении */
 }
 .button:active{
-    opacity: 0.1; /* Изменение прозрачности при наведении */
+    opacity: 0.1; 
 }
 
 .hidden-link{
