@@ -32,3 +32,4 @@ function changeImage(element, newSrc) {
 //         closeModal('messageModal');
 //     }
 // };
+

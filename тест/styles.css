@@ -1,0 +1,43 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Кнопка */
+.blink-button {
+    background-color: #ff5722;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: blink 1s infinite; /* Применяем анимацию */
+}
+
+/* Анимация мерцания */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Стили при наведении */
+.blink-button:hover {
+    background-color: #ff784e;
+    animation: none; /* Убираем мерцание при наведении */
+}

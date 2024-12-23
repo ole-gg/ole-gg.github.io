@@ -106,3 +106,27 @@ body{
     filter: invert(0%) !important; /* Отмена инверсии */
     /* opacity: 0.4; */
 }
+
+
+
+
+/* Кнопка */
+.blink {
+    animation: blink 1s infinite; /* Применяем анимацию */
+}
+
+/* Анимация мерцания */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Стили при наведении */
+.blink:hover {
+    background-color: #ff784e;
+    animation: none; /* Убираем мерцание при наведении */
+}
