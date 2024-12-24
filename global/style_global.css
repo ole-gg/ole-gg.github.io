@@ -35,7 +35,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ff0000; /* Цвет фона */
+    background: #050505; /* Цвет фона */
 
     overflow: auto; /* Включает прокрутку */
     overflow-x: hidden; /*скролл убирает*/
@@ -109,10 +109,11 @@ body{
 
 
 
-
 /* Кнопка */
 .blink {
+    
     animation: blink 1s infinite; /* Применяем анимацию */
+    
 }
 
 /* Анимация мерцания */
@@ -120,13 +121,27 @@ body{
     0%, 100% {
         opacity: 1;
     }
+    10% {
+        opacity: 0.3;
+    }
+    11% {
+        opacity: 0.7;
+    }
+    30% {
+        opacity: 0.1;
+    }
     50% {
         opacity: 0.3;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.1;
     }
 }
 
 /* Стили при наведении */
-.blink:hover {
-    background-color: #ff784e;
-    animation: none; /* Убираем мерцание при наведении */
-}
+/* .blink:hover {
+    animation: none; 
+} */
