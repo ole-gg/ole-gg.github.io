@@ -13,12 +13,12 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    
-  
+    flex-direction: column; /* Располагает элементы в колонку */
+    align-items: flex-start; /* Выровнять элементы по левому краю */
     top: 0;
     left: 0;
     width: 710px; /* Задайте необходимую ширину */
-    height: var(--height-max); /* Задайте высоту, чтобы колонка занимала всю высоту */
+    height: var(--height-max); 
     background-color: var(--colour-for-visual);
    
     text-align: right;
@@ -27,12 +27,12 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    
-  
+    flex-direction: column; /* Располагает элементы в колонку */
+    align-items: flex-start; /* Выровнять элементы по левому краю */
     top: 0;
     right: 0;
-    width: 615px; /* Задайте необходимую ширину */
-    height: var(--height-max); /* Задайте высоту, чтобы колонка занимала всю высоту */
+    width: 615px; 
+    height: var(--height-max); 
     background-color: var(--colour-for-visual);
     
     text-align: left;
